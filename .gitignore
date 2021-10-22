@@ -13,7 +13,6 @@ eclipse-extras/
 mbed-os/
 mbed_settings.py
 mbed_config.h
-*.pyc
 BUILD/
 cmake-build-debug/
 BUILD
@@ -28,4 +27,3 @@ BSP_B-L475E-IOT01/
 .build
 .mbed
 projectfiles
-*.py*
