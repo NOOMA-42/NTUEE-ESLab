@@ -1,8 +1,8 @@
 import socket
 import time
 
-HOST_ENV = {"dev": "192.168.0.11", "local-test": "127.0.0.1"}
-HOST = HOST_ENV["dev"] # Standard loopback interface address
+HOST_ENV = {"dev": "192.168.0.11", "local_test": "127.0.0.1"}
+HOST = HOST_ENV["local-test"] # Standard loopback interface address
 PORT = 65431
 clientMessage = "{\"x\":2, \"y\":5, \"z\":5, \"s\":10}"
 x_val = 10
