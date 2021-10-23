@@ -1,5 +1,8 @@
 HW2 Mbed Socket-Sensor
 ===========================
+## Project brief
+This is an integration of Mbed ARM official example socket and sensor. Mbed send data to local server (laptop)
+
 ## Installation Instruction
 1. Install library mbed-os, wifi-ism43362, BSP_B-L475E-IOT01
 2. Change the HOST name in mbed_app.json and hw2_server.py respectively. For testing server without Mbed, run hw2_client.py
