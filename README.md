@@ -1,4 +1,4 @@
-HW3 BLE Programming - Central
+HW4 BLE Programming - Peripheral
 ===========================
 ## Project brief
 Rasberry Pi 3 serves as central and Mbed as peripheral. Implement BLE button, LED1 status notification, writing to toggle LED2.
