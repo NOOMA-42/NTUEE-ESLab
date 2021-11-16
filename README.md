@@ -19,5 +19,5 @@ We tailored a PWM signal and read it with logic analyzer. We had Mbed and LED co
 1. Mbed DISCO-L4755VG-IOT01A
 2. logic analyzer LAP-C(16128)
 
-## Sample Outpu
+## Sample Output
 For further detail, please refer to report.pdf
