@@ -1,39 +1,23 @@
-HW4 BLE Programming - Peripheral
+HW5 PWM and Logic Analyzer
 ===========================
+## Lab Instruction
+Please read some information about PWM techniques and applications in Internet resources (such as https://en.wikipedia.org/wiki/Pulse-width_modulation, https://electricalfundablog.com/pulse-width-modulation/, ...) and find an application that you are interested in. And generate the PWM waveforms for the applications, which can be observed using a logic analyzer. Show some waveform observations in the report.
+
+Submission.
+1. Mbed Studio projects (in github)
+2. A report about your lab steps and discussions.
+
 ## Project brief
-Rasberry Pi 3 serves as central and Mbed as peripheral. Implement BLE button, LED1 status notification, writing to toggle LED2.
+We tailored a PWM signal and read it with logic analyzer. We had Mbed and LED connected through the board alongside with the logic analyzer.
 
 ## Installation Instruction
 1. Git pull
-2. Download mbed-os-example-ble-Button on Arm Mbed Website and put the source folder in project root folder
-2. (Optional) Change the python config and mbed variables, for example, UUID, device name per your local set-up 
-4. Run following code.
+2. Prepare board and zeroplus logic analyzer LAP-C(16128) and connect with Mbed
+3. Run following code.
 
 ## Device Requirements
-1. DISCO-L4755VG-IOT01A
-2. Raspberry Pi 3
+1. Mbed DISCO-L4755VG-IOT01A
+2. logic analyzer LAP-C(16128)
 
-**change following code**
-```
-# in ble_scan_connect.py
-# user config *** where you might need to change
-DEVICE_NAME = "Button_Paul"
-BUTTON_SERVICE_UUID = 0xA000
-BUTTON_CHAR_UUID = 0xA001
-ID_SERVICE_UUID = 0xA002
-LED_SERVICE_UUID = 0xA004
-LED1_STATE_CHARACTERISTIC_UUID = 0xA005
-LED2_STATE_CHARACTERISTIC_UUID = 0xA006
-
-# in XXService.h, LEDService.h for example
-const static uint16_t LED_SERVICE_UUID              = 0xA004;
-const static uint16_t LED1_STATE_CHARACTERISTIC_UUID = 0xA005; //alive
-const static uint16_t LED2_STATE_CHARACTERISTIC_UUID = 0xA006; //actuated
-```
-**plug in Mbed board and run this in command line**
-```
-sudo python ble_scan_connect.py
-```
-
-## Sample Output
-Refer to report.pdf
+## Sample Outpu
+For further detail, please refer to report.pdf
