@@ -1,22 +1,22 @@
-DHT11 one-wire serial protocol and device drivers
+HW7 Mbed-DSP programming
 ===========================
 ## Lab Instruction
-About using DHT11 sensors, Compare the IIO kernel driver implementation to that of Adafruit DHT11 python module. 
-•Ref: https://github.com/adafruit/Adafruit_Python_DHT/tree/master/source/Raspberry_Pi_2
+Design a DSP program using Mbed Studio or Mbed CLI to process the sensor data of 3D accelerators or gyroscopes from STM32 IOT Node development board.
+(1) The DSP program can implement a low pass filter, like FIR example, or other algorithms, such as FFT, etc.
+(2) Before testing real data, you should test the program using a known signal to show the correctness.
 
-Submit a report including the following two parts and some discussions:
-* Observe the DHT11 signal using a Logic  Analyzer. 
-* Explain or discuss the following terms:
-    1) What is Linux IIO subsystem?
-    (reference: https://www.kernel.org/doc/html/latest/driver-api/iio/index.html (連結到外部網站。))
-    (To access IIO devices, Linux application can use ibiio: https://analogdevicesinc.github.io/libiio/v0.20/index.html (連結到外部網站。) )
-    2) What is the memory-map IO?
-    3) How is the efficiency difference when compared between interrupt-driven I/O and polling I/O?
-    4) in pi_2_mmio.h, why pointer operation (pi_2_mmio_gpio+7)  (pi_2_mmio_gpio+10)?
+
+Submission: \
+github URL and a report about your approach and discussions.
+Please refer the mbed dsp examples to https://arm-software.github.io/CMSIS_5/DSP/html/group__groupExamples.html.
+
+Examples: \
+FIR Lowpass Filter Example, https://arm-software.github.io/CMSIS_5/DSP/html/group__FIRLPF.html
+
 
 ## Project brief
-We observed the DHT11 sensor data, humidity and temperature, with logic analyzer
-and corresponded to the output data from Python.
+We use DSP program to process the data of 3D accelerators at x-direction.
+
 
 ## Sample Output
 For further detail, please refer to report.pdf
